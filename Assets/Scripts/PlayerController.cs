@@ -39,8 +39,8 @@ public class PlayerController : MonoBehaviour
             float curSpeedY = canMove ? speed * Input.GetAxis("Horizontal") : 0;
             moveDirection = (forward * curSpeedX) + (right * curSpeedY);
 
-            float curSpeed = curSpeedY + curSpeedX;
-            animator.SetFloat("Speed", curSpeed);
+            //float curSpeed = curSpeedY + curSpeedX;
+            //animator.SetFloat("Speed", curSpeed);
 
             if (Input.GetButton("Jump") && canMove)
             {

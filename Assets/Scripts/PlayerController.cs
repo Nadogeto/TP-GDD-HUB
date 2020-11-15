@@ -39,8 +39,11 @@ public class PlayerController : MonoBehaviour
             float curSpeedY = canMove ? speed * Input.GetAxis("Horizontal") : 0;
             moveDirection = (forward * curSpeedX) + (right * curSpeedY);
 
-            //float curSpeed = curSpeedY + curSpeedX;
-            //animator.SetFloat("Speed", curSpeed);
+            // We setting the speed params in order to start the walking animation
+            //float SpeedY = curSpeedY;
+            //float SpeedX = curSpeedX;
+            //animator.SetFloat("InputY", SpeedY);
+            //animator.SetFloat("InputX", SpeedX);
 
             if (Input.GetButton("Jump") && canMove)
             {
